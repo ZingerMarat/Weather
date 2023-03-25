@@ -4,14 +4,14 @@ import React from "react";
 const Weather = (props) => {
   return(          <div>
     { props.city &&
-    <div>
+    <div className="infoWeath">
         <p>City: {props.city}, {props.country}</p>
         <p>Temperature: {props.temp} &deg;C</p>
         <p>Sunrise: {props.sunrise}</p>
         <p>Sunset: {props.sunset}</p>
     </div>
     }
-    <p>{props.error}</p> 
+    <p className="error">{props.error}</p> 
   </div> 
   );
 }
